@@ -6,4 +6,4 @@ NOTE While the above repo has the backend and frontend folder in one repo, to de
 
 ANOTHER NOTE This is not my actual portfolio, so it won't look perfect! This is treated like an exercise to practice the skills I've learned in the class so far.
 
-Here's a link to my live site: 
+Here's a link to my live site: https://clever-sable-805765.netlify.app
