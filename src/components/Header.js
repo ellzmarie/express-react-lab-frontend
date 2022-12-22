@@ -3,20 +3,19 @@ import {Link} from 'react-router-dom'
 function Header(props) {
     const navStyle = {
         display: 'flex',
-        justifyContent: 'space-around',
-        border: '3px solid black',
+        justifyContent: 'space-evenly',
+        // border: '3px solid black',
         padding: '8px',
-        width: '90%',
+        width: 'auto',
         margin: 'auto',
-    }
+        }
 
     return (
         <header>
-            <h1>My Portfolio Page</h1>
-            <nav style={navStyle}>
-                <Link to='/'>Home</Link>
-                <Link to='/about'>About</Link>
-                <Link to='/projects'>Projects</Link>
+            <nav style={navStyle} className='nav-bar'>
+                <Link to='/'>HOME</Link>
+                <Link to='/about'>ABOUT</Link>
+                <Link to='/projects'>PROJECTS</Link>
             </nav>
         </header>
     )
