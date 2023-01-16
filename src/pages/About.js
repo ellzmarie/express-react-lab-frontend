@@ -38,7 +38,9 @@ function About(props) {
   );
 
   // if data arrives return the result of loaded, if not, an h1 that says loading
-  return about ? loaded() : <h1>Loading...</h1>;
+
+  //added spinner instead of loading text
+  return about ? loaded() :  <i class="fa fa-spinner fa-spin" style={{ fontSize:"40px", textAlign: "center", display: 'block'}}></i>;;
 }
 
 export default About;

@@ -18,22 +18,24 @@ function Projects(props) {
   useEffect(() => {getProjectsData()}, []);
 
   // define a function that will return the JSX needed once we get the data
+
+  //anytime I have an href that takes the user away from my page I used the target="_blank" attribute to open another tab instead of taking the user completely away from your page
   const loaded = () => {
     return projects.map((project) => (
       <div>
         <h1>{project.name}</h1>
         <img src={project.image} />
-        <a href={project.git}>
+        <a target='_blank' href={project.git}>
           <button>Github</button>
         </a>
-        <a href={project.live}>
+        <a target='_blank' href={project.live}>
           <button>live site</button>
         </a>
       </div>
     ));
   };
-
-  return projects ? loaded() : <h1>Loading...</h1>;
+//added spinner instead of loading text
+  return projects ? loaded() : <i class="fa fa-spinner fa-spin" style={{ fontSize:"40px", textAlign: "center", color: 'red', display: 'block'}}></i>;
 }
 
 export default Projects;
