@@ -25,10 +25,10 @@ function Projects(props) {
       <div>
         <h1>{project.name}</h1>
         <img src={project.image} />
-        <a target='_blank' href={project.git}>
+        <a target='_blank' rel="noreferrer" href={project.git}>
           <button>Github</button>
         </a>
-        <a target='_blank' href={project.live}>
+        <a target='_blank' rel="noreferrer" href={project.live}>
           <button>live site</button>
         </a>
       </div>
